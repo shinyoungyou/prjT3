@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>prjT3 Settings</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body hidden>
+  <nav class="nav">
+    <span class="brand">Team prjT3</span>
+    <a href="admin.html">Admin Landing Page</a>
+    <a href="page1.html">Page 1</a>
+    <a href="page2.html">Page 2</a>
+    <a href="settings.html" aria-current="page">Settings</a>
+    <button id="logout" type="button">Logout</button>
+  </nav>
+
+  <main class="page">
+    <section class="card">
+      <h1>Settings</h1>
+      <form id="settings-form" autocomplete="off">
+        <label for="currentPassword">Current password</label>
+        <input id="currentPassword" name="currentPassword" type="password" maxlength="64" required>
+
+        <label for="newPassword">New password</label>
+        <input id="newPassword" name="newPassword" type="text" maxlength="6" pattern="\S{1,6}">
+        <p class="hint">Up to 6 characters, no spaces. Leave empty to keep the current one.</p>
+
+        <label for="newSecret">New secret</label>
+        <input id="newSecret" name="newSecret" type="text" maxlength="19" pattern="\S{1,19}">
+        <p class="hint">Up to 19 characters, no spaces. Leave empty to keep the current one.</p>
+
+        <button id="save-button" type="submit">Save changes</button>
+      </form>
+      <p id="message" class="message" role="alert" hidden></p>
+    </section>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/guard.js"></script>
+  <script src="js/settings.js"></script>
+</body>
+</html>
