@@ -1,0 +1,13 @@
+{
+  "name": "prjt3-password-hackathon-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "COMP 4537 mini-hackathon API: hand-rolled JWT + HttpOnly cookie auth using only Node.js built-ins",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
